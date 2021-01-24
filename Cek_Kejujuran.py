@@ -131,7 +131,23 @@ while True:
         print("Hadeuh\n")
         break
     elif pilihan == 4:
-        print(90*'=')
+        
+        print("=" * 31 + "-|" + jamLokal + "|-" + "=" * 31)
+    if 0 <= jam <= 6:
+        print("=" * 35 + "-<|Selamat Subuh|>-" + "=" * 36)
+
+    elif 6 <= jam <= 12:
+        print("=" * 36 + "-<|Selamat Pagi|>-" + "=" * 36)
+
+    elif 12 <= jam <= 14:
+        print("=" * 36 + "-<|Selamat Siang|>-" + "=" * 35)
+
+    elif 14 <= jam <= 18:
+        print("=" * 36 + "-|Selamat Sore|-" + "=" * 36)
+
+    elif 18 <= jam <= 24:
+        print("=" * 36 + "-<|Selamat Malam|>-" + "=" * 35)
+        
         print('''
   /$$$$$$  /$$$$$$$   /$$$$$$        /$$   /$$  /$$$$$$   /$$$$$$  /$$$$$$$         /$$$$ 
  /$$__  $$| $$__  $$ /$$__  $$      | $$$ | $$ /$$__  $$ /$$__  $$| $$__  $$       /$$  $$
@@ -142,12 +158,6 @@ while True:
 | $$  | $$| $$      | $$  | $$      | $$ \  $$|  $$$$$$/| $$  | $$| $$$$$$$/         /$$  
 |__/  |__/|__/      |__/  |__/      |__/  \__/ \______/ |__/  |__/|_______/         |__/  
 ''')
-        print(90*'=')
-        waktu_sekarang = datetime.now()
-        waktu_sekarang.__format__('%A,%d %B %Y ')
-        waktu = datetime.time(waktu_sekarang)
-        waktu.__format__('%H %M %S')
-        print(waktu_sekarang.__format__(24 * '=' + ' %A,%d %B %Y'), waktu.__format__('%H:%M:%S %p ' + 25 * '='))
         print(90*'=')
         print("Mending lu follow gw ngab")
         print("Facebook     : DHN")
